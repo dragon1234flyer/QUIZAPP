@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".quizquestion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+>
+
+      <TextView
+    android:id="@+id/questionop"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="5dp"
+          android:gravity="center"
+          android:textSize="20sp"
+          android:textColor = "#363A43"
+          tools:text = "what contry dose this flage belong to"
+          >
+
+
+      </TextView>
+<ImageView
+    android:id="@+id/vew1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:contentDescription="image"
+    tools:src = "@drawable/ic_flag_of_germany"
+
+    >
+
+
+
+</ImageView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            >
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="0dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="9"
+                android:outlineSpotShadowColor="@color/material_dynamic_secondary95"
+                android:outlineAmbientShadowColor="@color/material_dynamic_secondary95"
+                android:indeterminate="false"
+                android:minHeight="50dp"
+                android:progress="4"
+                >
+
+
+            </ProgressBar>
+            <TextView
+                android:id="@+id/progresstv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:padding="10dp"
+
+                >
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/op1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+
+                android:background="@drawable/default_option_border_bg"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text=""
+                android:textColor="#7A8089"
+                android:textSize="30sp">
+
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/op2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@drawable/default_option_border_bg"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text=""
+                android:textColor="#7A8089"
+                android:textSize="30sp">
+
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/op3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:background="@drawable/default_option_border_bg"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text=""
+                android:textColor="#7A8089"
+                android:textSize="30sp">
+
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/op4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:background="@drawable/default_option_border_bg"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text=""
+                android:textColor="#7A8089"
+                android:textSize="30sp">
+
+
+            </TextView>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/default_option_border_bg"
+
+            android:backgroundTint="#5C2020"
+            android:padding="10dp"
+            android:shadowColor="#A62B2B"
+            android:text="SUBMIT"
+            android:layout_marginTop="5dp"
+            android:textColor="#7A8089"
+            android:textColorHighlight="#A11F1F"
+            android:textColorHint="@color/btncolor2"
+            android:textColorLink="#254870"
+            android:textSize="30dp"
+            app:strokeColor="#D33737">
+
+        </Button>
+    </LinearLayout>
+    
+
+</ScrollView>
